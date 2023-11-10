@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#logo_header{
+    width: 200px;
+}
+
+.navbar{
+    padding: 15px 4%;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: hsl(54, 100%, 61%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
+.navbar-toggler{
+border: 0px;
+}
+
+.carousel{
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.carousel-item img{
+    margin: auto;
+    height: 20vw;
+    width: 80vw;
+}
+
+#eventos{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evento{
+    display: flex;
+    width: 80%;
+    height: 11vw;
+    margin: 0.6vw;
+}
+
+.evento img{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.evento-dados{
+    background-color: hsla(54, 100%, 61%, 0.507);
+    width: 100%;
+    height: 100%;
+    margin-left: 25px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.evento-descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 75%;
+}
+
+.evento-descricao h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.evento-descricao h5 {
+    color: black;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4vw;
+}
+
+.evento-descricao p{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.evento-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.evento-compra a{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.evento-compra p{
+    margin: 5px;
+    padding: 0;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.evento-compra a{
+    margin: 5px;
+    background-color: white;
+    width: 100%;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 991px) {
+    .evento{
+        display: flex;
+        width: 100%;
+        height: 22vh;
+    }
+}
+@media (max-width: 575px) {
+    .navbar{
+        padding: 5px 0px;
+    }
+
+    .carousel-item img{
+        height: 20vh;
+        width: 100vw;
+        margin: 0.4%;
+    }
+
+    .evento{
+        display: flex;
+        width: 100%;
+        height: 50vw;
+    }
+
+    .evento-dados{
+        background-color: hsla(54, 100%, 61%, 0.507);
+        width: 100%;
+        height: 100%;
+        margin-left: 0.6vw;
+        padding: 0.6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .evento-descricao{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .evento-descricao h2 {
+        font-size: 5.5vw;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .evento-descricao .evento-endereco{
+        width: 100%;
+    }
+    .evento-descricao h5 {
+        color: black;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+        font-size: 3.2vw;
+        text-align: justify;
+    }
+    
+    .evento-descricao .evento-subtitulo{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px 0;
+    }
+    .evento-descricao .evento-subtitulo .local{
+        width: 100%;
+    }
+    .evento-descricao .evento-subtitulo .data{
+        width: 50%;
+    }
+
+    .evento-descricao p{
+        font-size: 3.2vw;
+        font-weight: 500;
+    }
+    
+    .evento-compra{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+        border-top: 1px solid rgba(0, 0, 0, 0.308);
+    }
+    .evento-compra p{
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: center;
+        width: 30%;
+    }
+    .evento-compra a{
+        background-color: white;
+        width: 60%;
+        font-size: 3.6vw;
+        font-weight: 400;
+    }
+}

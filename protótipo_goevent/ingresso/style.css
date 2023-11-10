@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { 
+  -moz-appearance: textfield; 
+  appearance: textfield; 
+}
+
+#logo_header{
+    width: 200px;
+}
+
+.navbar{
+    padding: 15px 4%;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: hsl(54, 100%, 61%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
+.navbar-toggler{
+border: 0px;
+}
+
+.carousel{
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.carousel-item img{
+    margin: auto;
+    height: 20vw;
+    width: 100vw;
+}
+
+#evento{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+}
+
+#evento .flyer{
+    width: 23vw;
+    margin: 0;
+    padding: 0;
+}
+
+.evento-dados{
+    background-color: hsla(54, 100%, 61%, 0.507);
+    width: 100%;
+    min-height: 28vw;
+    margin-left: 25px;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.evento-dados h2 {
+    font-size: 2vw;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.evento-dados p{
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.selecao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.selecao img{
+    height: 25vw;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.lugares{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-self: end;
+}
+
+.evento-dados a{
+    background-color: white;
+    width: 15%;
+    font-size: 1.6vw;
+    font-weight: 400;
+    align-self: flex-end;
+    right: 3vw;
+    margin-top: 1.2vw;
+}
+
+.lugar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3vw 0;
+}
+
+.lugar p{
+    font-size: 2vw;
+}
+
+.lugar .lugar-selecao{
+    display: flex;
+}
+
+.lugar .lugar-selecao button{
+    background-color: white;
+}
+.lugar .lugar-selecao button:hover{
+    background-color: black;
+}
+
+#input-ticket{
+    text-align: center;
+    width: 3vw;
+    margin: 0 1vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border: 0px;
+}
+
+.dados-pessoais{
+    width: 20vw;
+    font-size: 1.2vw;
+}
+.dados-pessoais-nascimento{
+    width: 10vw;
+}
+.dados-pessoais-pag{
+    width: 10vw;
+}
+
+@media (max-width: 991px) {
+    .evento{
+        display: flex;
+        width: 100%;
+        height: 22vh;
+    }
+}
+@media (max-width: 575px) {
+    .navbar{
+        padding: 5px 0px;
+    }
+
+    #evento{
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    #evento .flyer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .evento-dados{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .evento-dados h2 {
+        font-size: 6vw;
+        width: 100%;
+        font-weight: bold;
+        color: black;
+        margin: 2vw;
+        padding: 0;
+        text-align: center;
+    }  
+    .selecao{
+        flex-direction: column;
+        align-items: center;
+    }
+    .selecao img{
+    width: 60vw;
+    height: 75vw;        
+    margin: 0;
+    }
+    .lugares{
+        margin: 5vw;
+    }
+    .lugar p, .selecao p{
+        font-size: 4vw;
+    }
+
+    #input-ticket{
+        text-align: center;
+        width: 10vw;
+        margin: 0 1vw;
+        font-size: 5vw;
+        font-weight: 600;
+        border: 0px;
+    }
+
+    .evento-dados a{
+        background-color: white;
+        width: auto;
+        font-size: 4vw;
+        font-weight: 400;
+        align-self: flex-end;
+        right: 3vw;
+        margin-top: 0;
+    }
+
+    .dados-pessoais{
+        width: 60vw;
+        font-size: 4vw;
+    }
+
+    .dados-pessoais-nascimento{
+        width: 32vw;
+    }
+    .dados-pessoais-pag{
+        width: 20vw;
+    }
+
+}
